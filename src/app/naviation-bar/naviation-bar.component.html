@@ -1,0 +1,149 @@
+<!-- Top dark header with logo on left, links on right -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <mat-toolbar class="logo-bar">
+    <img src="assets/images/logo.jpg" class="logo-img" alt="Logo">
+    <div class="nav-links">
+        <a mat-button routerLink="/career" style="color: aliceblue; padding-left: 1000px; font-size: 20px;">Career</a>
+        <a mat-button routerLink="/blogs" style="color: aliceblue; font-size: 20px;">Blogs</a>
+        <a mat-button routerLink="/rfq" style="color: aliceblue; font-size: 20px;">RFQ</a>
+    </div>
+</mat-toolbar> -->
+<mat-toolbar class="logo-bar">
+  <div class="toolbar-content">
+    <img src="assets/images/logo.jpg" class="logo-img" alt="Logo">
+    <span class="spacer"></span>
+    <nav class="nav-links">
+      <a mat-button routerLink="/career">Career</a>
+      <a mat-button routerLink="/blogs">Blogs</a>
+      <a mat-button routerLink="/rfq">RFQ</a>
+    </nav>
+  </div>
+</mat-toolbar>
+
+
+<!-- Orange nav bar with centered links -->
+<mat-toolbar class="orange-nav">
+    <a mat-button routerLink="/">Home</a>
+    <a mat-button routerLink="/about">About Us</a>
+    <a mat-button routerLink="/services">Engineering Services</a>
+    <a mat-button routerLink="/manufacturing">Manufacturing</a>
+    <a mat-button routerLink="/contact">Contact Us</a>
+</mat-toolbar>
+<!-- Welcome Section -->
+<div class="hero-section">
+    <div class="hero-image">
+        <img src="assets/images/technology.avif" alt="Engineering Workstation" />
+    </div>
+    <div class="hero-text">
+        <h3>Welcome To</h3>
+        <h1>Precision Dynamics Technology</h1>
+        <h3>Your Trusted Partner in Mechanical Engineering Services</h3>
+        <p>
+            Mechanical engineering and robotics simulation are at the core of innovation in today’s automotive and
+            industrial sectors. When you think of engineering services, what comes to mind? <strong>Perfection.</strong>
+            That’s exactly what we deliver.
+            <br /><br />
+            At <strong>Precision Dynamics Technology</strong>, we are dedicated to providing high-quality mechanical
+            design, engineering, and simulation solutions that empower OEMs and businesses to innovate and grow without
+            obstacles.
+            <br /><br />
+            Our team brings together precision, expertise, creativity, and dedication to craft engineering solutions
+            that are both powerful and efficient. Whether it's mechanical design or advanced robotics simulation, we are
+            here to exceed your expectations.
+            <br /><br />
+            Partner with <strong>Precision Dynamics Technology</strong>, and let’s build the future—together.
+        </p>
+    </div>
+</div>
+
+<div class="tagline">Where Engineering Meets Excellence</div>
+<div class="contact-section">
+    <div class="contact-image">
+        <img src="assets/images/message.png" alt="Contact Illustration" />
+    </div>
+    <div class="contact-form">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <label>First Name *</label>
+            <input type="text" placeholder="E.g. John" name="firstName" [(ngModel)]="formData.firstName" required />
+
+            <label>Organization Name *</label>
+            <input type="text" placeholder="Precision Dynamics" name="organization" [(ngModel)]="formData.organization"
+                required />
+
+            <label>Email Address *</label>
+            <input type="email" placeholder="E.g. john@doe.com" name="email" [(ngModel)]="formData.email" required />
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="E.g. +1 3004005000" name="phone" [(ngModel)]="formData.phone" />
+
+            <label>Message</label>
+            <textarea name="message" rows="5" maxlength="180" placeholder="Enter your message..."
+                [(ngModel)]="formData.message">
+            </textarea>
+
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Our Services</h3>
+            <a mat-button routerLink="/design">Design Services</a>
+            <a mat-button routerLink="/manufacturing">Manufacturing</a>
+            <a mat-button routerLink="/robotics">Robotic Simulation</a>
+            <a mat-button routerLink="/analysis">Simulation & Analysis</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <a mat-button routerLink="/career">Career</a>
+            <a mat-button routerLink="/blogs">Blogs</a>
+            <a mat-button routerLink="/rfq">RFQ</a>
+        </div>
+        <div class="footer-right">
+            <div class="footer-column">
+                <h3>Find Us</h3>
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0471042652674!2d73.95164337503835!3d18.571975867038003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3d2a88e31e9%3A0xf7f5894d9910ab63!2sCity%20Vista%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681459833566!5m2!1sen!2sin"
+                    width="250" height="120" style="border:2px solid orange;" allowfullscreen="" loading="lazy">
+                </iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.6839744160297!2d73.82059199999999!3d18.7229616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b70020c67055%3A0xef8b77fd1eb92067!2sFAITH%20AUTOMATION%20-%20NIGHOJE%20PLANT!5e0!3m2!1sen!2sin!4v1751014184963!5m2!1sen!2sin"
+                    width="250" height="120" style="border:2px solid orange;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="social">
+                    <p>Follow Us On</p>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <a mat-button href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Subscribe For Updates</h3>
+            <mat-form-field appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput placeholder="Your Name" />
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Email Address</mat-label>
+                <input matInput placeholder="yourname@company.com" />
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        COPYRIGHT © Precision Dynamics Technology Pvt Ltd
+    </div>
+</footer>
