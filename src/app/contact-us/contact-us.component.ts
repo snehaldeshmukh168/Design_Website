@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { MailserviceService } from '../mailservice.service';
 
 @Component({
-  selector: 'app-naviation-bar',
-  templateUrl: './naviation-bar.component.html',
-  styleUrl: './naviation-bar.component.css'
+  selector: 'app-contact-us',
+  templateUrl: './contact-us.component.html',
+  styleUrl: './contact-us.component.css'
 })
-export class NaviationBarComponent {
-
-  formData = {
+export class ContactUsComponent {
+ formData = {
     firstName: '',
     organization: '',
     email: '',

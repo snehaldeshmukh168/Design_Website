@@ -2,3 +2,223 @@ a.active {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.orange-nav {
+    background-color: #f78b00 !important;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+    width: 100%;
+} 
+@media (max-width: 768px) {
+  .orange-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.logo-bar {
+  background-color: #08004d;
+  color: white;
+  padding: 0 20px;
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    margin: 4px 8px;
+    white-space: nowrap;
+  }
+}
+.footer-section {
+  background-color: #08004d;
+  color: white;
+  padding: 40px 20px 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  color: #f78b00;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+.footer-right {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column iframe {
+  width: 100%;
+}
+.social p {
+  color: #f78b00;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* optional spacing between icons */
+}
+
+.icons a i {
+  color: #f78b00;
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+
+.icons a:hover i {
+  color: #ffffff;
+}
+
+
+.subscribe-btn {
+  margin-top: 10px;
+  background-color: #f78b00 !important;
+  color: #fff !important;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ccc;
+}
+.footer-column mat-form-field {
+  width: 100%;
+}
+.footer-column {
+  padding-right: 20px;
+}
+
+.subscribe-btn {
+  margin-top: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px;
+  }
+}
+
+/* Styling for the button that triggers the menu */
+button[mat-button] {
+  padding: 30px 40px; 
+  font-size: 16px;  
+}
+.dropdown-menu .mat-list{
+  width: 600px;
+}
+.mat-list .formate{
+  width: 800px;
+}
+.dropdown-menu .mat-list .mat-list-item {
+   width: 500px; /* Ensures the list items have at least 150px width */
+  padding: 10px 20px;
+  /* display: flex; */
+  justify-content: flex-start;
+}
+/* Ensure the mat-menu has the correct width and does not break */
+.mat-menu-panel {
+  min-width: 250px;  /* Set a minimum width for the dropdown */
+  width: 800px; /* Adjust this width as per your design */
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in width */
+}
+
+/* Style for mat-list-item inside the mat-menu */
+.mat-menu-item {
+  font-size: 16px; /* Increase font size for better readability */
+  padding: 10px 20px; /* Add more padding for comfortable spacing */
+  display: block;  /* Make sure it takes the full width of the menu */
+  text-align: left; /* Align text to the left */
+}
+
+/* Ensure that items align and are centered inside the dropdown */
+.dropdown-menu .mat-list {
+  padding: 0;
+}
+
+

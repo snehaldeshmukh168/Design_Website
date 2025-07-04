@@ -1,0 +1,29 @@
+<div class="contact-section">
+    <div class="contact-image">
+        <img src="assets/images/message.png" alt="Contact Illustration" />
+    </div>
+    <div class="contact-form">
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <label>First Name *</label>
+            <input type="text" placeholder="E.g. John" name="firstName" [(ngModel)]="formData.firstName" required />
+
+            <label>Organization Name *</label>
+            <input type="text" placeholder="Precision Dynamics" name="organization" [(ngModel)]="formData.organization"
+                required />
+
+            <label>Email Address *</label>
+            <input type="email" placeholder="E.g. john@doe.com" name="email" [(ngModel)]="formData.email" required />
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="E.g. +1 3004005000" name="phone" [(ngModel)]="formData.phone" />
+
+            <label>Message</label>
+            <textarea name="message" rows="5" maxlength="180" placeholder="Enter your message..."
+                [(ngModel)]="formData.message">
+            </textarea>
+
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>

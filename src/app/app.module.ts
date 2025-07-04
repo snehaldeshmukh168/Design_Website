@@ -7,18 +7,34 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { NaviationBarComponent } from './naviation-bar/naviation-bar.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HomeComponent } from './home/home.component';
+import { ManufacturingautomationComponent } from './manufacturingautomation/manufacturingautomation.component';
+import { JigsfixturesComponent } from './jigsfixtures/jigsfixtures.component';
+import { FabricationstructuralComponent } from './fabricationstructural/fabricationstructural.component';
+import { CadreverseengineeringComponent } from './cadreverseengineering/cadreverseengineering.component';
+import { PlccontrolpanelComponent } from './plccontrolpanel/plccontrolpanel.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import { CommonModule } from '@angular/common';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NaviationBarComponent
+    ContactUsComponent,
+    HomeComponent,
+    ManufacturingautomationComponent,
+    JigsfixturesComponent,
+    FabricationstructuralComponent,
+    CadreverseengineeringComponent,
+    PlccontrolpanelComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +47,11 @@ import { FormsModule } from '@angular/forms';
     MatSelectModule,
     MatInputModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatGridListModule,
+    MatListModule,
+     CommonModule,
+     MatMenuModule
   ],
   providers: [
     provideAnimationsAsync()
