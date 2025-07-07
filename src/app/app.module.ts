@@ -24,6 +24,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import {MatMenuModule} from '@angular/material/menu';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MatMenuModule} from '@angular/material/menu';
     JigsfixturesComponent,
     FabricationstructuralComponent,
     CadreverseengineeringComponent,
-    PlccontrolpanelComponent
+    PlccontrolpanelComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

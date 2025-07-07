@@ -16,20 +16,33 @@
 <!-- Orange nav bar with centered links -->
 <mat-toolbar class="orange-nav">
     <a mat-button routerLink="/">Home</a>
-    <a mat-button routerLink="/about">About Us</a>
+    <a mat-button routerLink="/about-us">About Us</a>
     <!-- Engineering Services Dropdown -->
-  <button mat-button [matMenuTriggerFor]="menu">Engineering Services</button>
+    <button mat-button [matMenuTriggerFor]="menu">Engineering Services</button>
+    <!-- Dropdown Menu -->
+    <mat-menu #menu="matMenu" class="dropdown-menu">
+        <mat-list class="formate">
+            <mat-list-item routerLink="/manufacturing-automation">Manufacturing and Automation</mat-list-item>
+            <mat-list-item routerLink="/jigs-fixture">Jigs & Fixtures</mat-list-item>
+            <mat-list-item routerLink="/fabrication-structural">Fabrication Work & Structural Design</mat-list-item>
+            <mat-list-item routerLink="/cad-reverse-engineering">3D CAD Modelling & Reverse Engineering</mat-list-item>
+            <mat-list-item routerLink="/plc-control-panel">PLC Programming & Control Panel</mat-list-item>
+        </mat-list>
+    </mat-menu>
+
+    <!-- <mat-select required class="form-control select-style" 
+            name="menu"  
+            #menu 
+            id="menu" 
+            placeholder="Engineering Services">
   
-  <!-- Dropdown Menu -->
-  <mat-menu #menu="matMenu" class="dropdown-menu">
-    <mat-list class="formate">
-      <mat-list-item routerLink="/manufacturing-automation">Manufacturing and Automation</mat-list-item>
-      <mat-list-item routerLink="/jigs-fixture">Jigs & Fixtures</mat-list-item>
-      <mat-list-item routerLink="/fabrication-structural">Fabrication Work & Structural Design</mat-list-item>
-      <mat-list-item routerLink="/cad-reverse-engineering">3D CAD Modelling & Reverse Engineering</mat-list-item>
-      <mat-list-item routerLink="/plc-control-panel">PLC Programming & Control Panel</mat-list-item>
-    </mat-list>
-  </mat-menu>
+  <mat-option value="true" routerLink="/manufacturing-automation">Manufacturing and Automation</mat-option>
+  <mat-option value="false" routerLink="/jigs-fixture">Jigs & Fixtures</mat-option>
+   <mat-option value="true" routerLink="/fabrication-structural">Fabrication Work & Structural Design</mat-option>
+  <mat-option value="false" routerLink="/cad-reverse-engineering">3D CAD Modelling & Reverse Engineering</mat-option>
+   <mat-option value="true" routerLink="/plc-control-panel">PLC Programming & Control Panel</mat-option>
+
+</mat-select> -->
 
     <a mat-button routerLink="/contact-us">Contact Us</a>
 </mat-toolbar>

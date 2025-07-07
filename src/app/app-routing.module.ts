@@ -7,6 +7,7 @@ import { FabricationstructuralComponent } from './fabricationstructural/fabricat
 import { CadreverseengineeringComponent } from './cadreverseengineering/cadreverseengineering.component';
 import { PlccontrolpanelComponent } from './plccontrolpanel/plccontrolpanel.component';
 import { JigsfixturesComponent } from './jigsfixtures/jigsfixtures.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'fabrication-structural', component: FabricationstructuralComponent },
   { path: 'cad-reverse-engineering', component: CadreverseengineeringComponent },
   { path: 'plc-control-panel', component: PlccontrolpanelComponent },
+  { path: 'about-us', component:AboutUsComponent}
 ];
 
 @NgModule({
